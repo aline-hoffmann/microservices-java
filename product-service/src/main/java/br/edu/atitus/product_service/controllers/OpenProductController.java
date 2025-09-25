@@ -34,7 +34,7 @@ public class OpenProductController {
 		ProductEntity product = repository.findById(idProduct)
 				.orElseThrow(() -> new Exception("Product not found"));
 		
-		product.setEnvironment("Product-Service running on Port: " + serverPort);
+		product.setEnviroment("Product-Service running on Port: " + serverPort);
 		product.setConvertedPrice(product.getPrice()); // MOCK = > somente para testes
 		
 		return ResponseEntity.ok(product);

@@ -74,7 +74,7 @@ public class ProductEntity {
 	public String getEnviroment() {
 		return enviroment;
 	}
-	public void setEnvironment(String enviroment) {
+	public void setEnviroment(String enviroment) {
 		this.enviroment = enviroment;
 	}
 	public double getConvertedPrice() {
