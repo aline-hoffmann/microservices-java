@@ -1,18 +1,13 @@
 package br.edu.atitus.product_service.clients;
 
-public class CurrencyResponse {
-	
+public class CurrencyResponse { // +- um RECORD
+
 	private Long id;
-	
 	private String source;
-	
 	private String target;
-	
 	private double conversionRate;
-	
 	private double convertedValue;
-	
-	private String enviroment;
+	private String environment;
 
 	public Long getId() {
 		return id;
@@ -54,14 +49,12 @@ public class CurrencyResponse {
 		this.convertedValue = convertedValue;
 	}
 
-	public String getEnviroment() {
-		return enviroment;
+	public String getEnvironment() {
+		return environment;
 	}
 
-	public void setEnviroment(String enviroment) {
-		this.enviroment = enviroment;
+	public void setEnvironment(String environment) {
+		this.environment = environment;
 	}
-	
-	
 
 }

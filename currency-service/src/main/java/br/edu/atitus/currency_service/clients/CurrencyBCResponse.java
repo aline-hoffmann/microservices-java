@@ -5,7 +5,7 @@ import java.util.List;
 public class CurrencyBCResponse {
 
 	private List<CurrencyBC> value;
-	
+
 	public List<CurrencyBC> getValue() {
 		return value;
 	}
@@ -24,7 +24,5 @@ public class CurrencyBCResponse {
 		public void setCotacaoVenda(double cotacaoVenda) {
 			this.cotacaoVenda = cotacaoVenda;
 		}
-		
-		
 	}
 }

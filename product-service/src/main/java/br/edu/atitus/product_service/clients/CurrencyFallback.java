@@ -11,7 +11,7 @@ public class CurrencyFallback implements CurrencyClient {
 		fallback.setConvertedValue(-1);
 		fallback.setSource(source);
 		fallback.setTarget(target);
-		fallback.setEnviroment("Currency service unavailable - Fallback activated");
+		fallback.setEnvironment("Currency service unavailable - Fallback activated");
 		return fallback;
 	}
 }

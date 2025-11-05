@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import br.edu.atitus.product_service.entities.ProductEntity;
 
 @Repository
-public interface ProductRepository extends JpaRepository<ProductEntity, Long>{
+public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
 
 }

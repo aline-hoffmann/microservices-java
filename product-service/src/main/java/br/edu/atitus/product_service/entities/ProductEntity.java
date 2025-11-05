@@ -11,78 +11,105 @@ import jakarta.persistence.Transient;
 @Entity
 @Table(name = "tb_product")
 public class ProductEntity {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private String description;
 	private String brand;
 	private String model;
 	private double price;
+
 	@Column(length = 3)
 	private String currency;
 	private Integer stock;
-	
+
+	@Column(name = "image_url")
+	private String imageUrl;
+
 	@Transient
-	private String enviroment;
+	private String environment;
 	@Transient
 	private double convertedPrice;
-	
+
 	public Long getId() {
 		return id;
 	}
+
 	public void setId(Long id) {
 		this.id = id;
 	}
+
 	public String getDescription() {
 		return description;
 	}
+
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
 	public String getBrand() {
 		return brand;
 	}
+
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
+
 	public String getModel() {
 		return model;
 	}
+
 	public void setModel(String model) {
 		this.model = model;
 	}
+
 	public double getPrice() {
 		return price;
 	}
+
 	public void setPrice(double price) {
 		this.price = price;
 	}
+
 	public String getCurrency() {
 		return currency;
 	}
+
 	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
-	public Integer getStock() {
-		return stock;
+
+	public String getEnvironment() {
+		return environment;
 	}
-	public void setStock(Integer stock) {
-		this.stock = stock;
+
+	public void setEnvironment(String environment) {
+		this.environment = environment;
 	}
-	public String getEnviroment() {
-		return enviroment;
-	}
-	public void setEnviroment(String enviroment) {
-		this.enviroment = enviroment;
-	}
+
 	public double getConvertedPrice() {
 		return convertedPrice;
 	}
+
 	public void setConvertedPrice(double convertedPrice) {
 		this.convertedPrice = convertedPrice;
 	}
-	
-	
+
+	public Integer getStock() {
+		return stock;
+	}
+
+	public void setStock(Integer stock) {
+		this.stock = stock;
+	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
 }

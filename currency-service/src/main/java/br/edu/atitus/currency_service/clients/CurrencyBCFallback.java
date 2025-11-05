@@ -5,14 +5,12 @@ import java.util.Collections;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CurrencyBCFallback implements CurrencyBCClient{
+public class CurrencyBCFallback implements CurrencyBCClient {
 
 	@Override
-	public CurrencyBCResponse getCurrency(String moeda) {
-		CurrencyBCResponse fallback = new CurrencyBCResponse();
-		fallback.setValue(Collections.emptyList());
-		return fallback;
+	public CurrencyBCResponse getCurrencyBC(String moeda, String dataCotacao) {
+		CurrencyBCResponse currency = new CurrencyBCResponse();
+		currency.setValue(Collections.emptyList());
+		return currency;
 	}
-	
-
 }

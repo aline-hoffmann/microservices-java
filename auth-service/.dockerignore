@@ -1,0 +1,6 @@
+# Ignora todos os arquivos por padrão
+**
+
+# Mantém apenas os arquivos necessários para build
+!pom.xml
+!src/
